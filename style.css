@@ -1,0 +1,239 @@
+body, * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(16, 10, 39);
+}
+
+.solar-system {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.solar-system .cycleNep {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 700px;
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+  -webkit-animation: nep 45s infinite linear;
+          animation: nep 45s infinite linear;
+}
+@-webkit-keyframes nep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes nep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.solar-system .cycleNep .neptune {
+  position: absolute;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  border-radius: 50%;
+}
+.solar-system .cycleNep .cycleUranus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 650px;
+  height: 650px;
+  border: 3px solid whitesmoke;
+  border-radius: 50%;
+  -webkit-animation: ura 25s infinite linear;
+          animation: ura 25s infinite linear;
+}
+@-webkit-keyframes ura {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(300deg);
+  }
+}
+@keyframes ura {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(300deg);
+  }
+}
+.solar-system .cycleNep .cycleUranus .uranus {
+  position: absolute;
+  bottom: 87px;
+  right: 80px;
+  width: 20px;
+  height: 20px;
+  background-color: lightblue;
+  border-radius: 50%;
+}
+.solar-system .cycleNep .cycleUranus .cycleSaturn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 570px;
+  height: 570px;
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+  -webkit-animation: sat 25s inherit linear;
+          animation: sat 25s inherit linear;
+}
+@-webkit-keyframes sat {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360drg);
+  }
+}
+@keyframes sat {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360drg);
+  }
+}
+.solar-system .cycleNep .cycleUranus .cycleSaturn .sat {
+  position: absolute;
+  top: 20px;
+  right: 300px;
+  width: 40px;
+  height: 40px;
+  background-color: burlywood;
+  border-radius: 50%;
+}
+.solar-system .cycleNep .cycleUranus .cycleSaturn .cycleJupiter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  -webkit-animation: jup 45s infinite linear;
+          animation: jup 45s infinite linear;
+}
+@-webkit-keyframes jup {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes jup {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.solar-system .cycleNep .cycleUranus .cycleSaturn .cycleJupiter .jup {
+  position: absolute;
+  top: 50px;
+  right: 45px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(126, 88, 13);
+}
+.solar-system .cycleNep .cycleUranus .cycleSaturn .cycleJupiter .cycleMars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  -webkit-animation: mars 22s infinite linear;
+          animation: mars 22s infinite linear;
+}
+@-webkit-keyframes mars {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes mars {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.solar-system .cycleNep .cycleUranus .cycleSaturn .cycleJupiter .cycleMars .mars {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 50%;
+  top: -5px;
+  right: 145px;
+}
+.solar-system .cycleNep .cycleUranus .cycleSaturn .cycleJupiter .cycleMars .cycleEarth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  -webkit-animation: earth 30s infinite linear;
+          animation: earth 30s infinite linear;
+}
+@-webkit-keyframes earth {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes earth {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.solar-system .cycleNep .cycleUranus .cycleSaturn .cycleJupiter .cycleMars .cycleEarth .earth {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(4, 4, 129);
+  border-radius: 50%;
+}
+.solar-system .cycleNep .cycleUranus .cycleSaturn .cycleJupiter .cycleMars .cycleEarth .sun {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(241, 222, 11);
+}/*# sourceMappingURL=style.css.map */
